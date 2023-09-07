@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+  }
+  #loader{
+    z-index: 9999;
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    color: antiquewhite;
+  }
+  
+  #main{
+    display: none;
+  }
+  .Top {
+    background-color: rgba(6, 6, 8, 0.608);
+    height: auto;
+    padding: 0.25rem;
+    margin: 0px;
+  }
+  .main_heading {
+    color: antiquewhite;
+  }
+  .btn {
+    background-color: black;
+    border: 1px solid black;
+    color: antiquewhite;
+    border-radius: 4px;
+    margin: 5px;
+    padding: 5px;
+  }
+  .btn:hover {
+    cursor: pointer;
+  }
+  ul {
+    margin: 0px;
+    padding: 0px;
+  }
+  .card {
+    text-align: left;
+    background-color: rgba(255, 228, 196, 0.582);
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 1px;
+    width: 80%;
+    padding: 10px;
+  }
+  #Task {
+    border-radius: 5px;
+    height: 50px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  #del {
+    justify-content: right;
+  }
+  #del:hover {
+    background-color: rgb(2, 170, 2);
+    color: rgb(235, 235, 235);
+  }
+  .delbtn {
+    background-color: black;
+    color: antiquewhite;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-right: 15px;
+  }
+  .card:hover {
+    color: white;
+    background-color: rgb(170, 170, 190);
+  }
+  .profile{
+    background-image: url(/icon-modified.png);
+    background-size: contain;
+    opacity:85%;
+    height:60px;
+    width:60px;
+    border-radius: 100%;
+    border: 1px solid black;
+    position: absolute;
+    right: 1%;
+    top: 3%;
+    color: antiquewhite;
+  }
+  #loading_animation{
+    margin-top: 30vh;
+    height: 20vh;
+  }
+  #background-video{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */  
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Ensure the video stays in the background */
+  }
+
+
+@media screen and (max-width:480px) {
+      .Top {
+        height: 7.5rem;
+        padding: 1rem;
+      }
+      .main_heading {
+        color: antiquewhite;
+        font-size: 1.35rem;
+      }
+      body {
+        background-size: 100%;
+      }
+      .btn {
+        border: 0.45rem solid black;
+        border-radius: 0.35rem;
+        margin: 0.45rem;
+        padding: 0.45rem;
+      }
+      .btn:hover {
+        cursor: pointer;
+      }
+      .card {
+        border: 0.12rem solid black;
+        border-radius: 0.75rem;
+        margin: 1rem;
+        width: 80%;
+        padding: 10px;
+      }
+      #Task {
+        border-radius: 0.5rem;
+        height: 2.5rem;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+      }
+      #del {
+        justify-content: right;
+      }
+      #del:hover {
+        background-color: rgb(2, 170, 2);
+        color: rgb(235, 235, 235);
+      }
+      .delbtn {
+        padding: 0.35rem;
+        border: 0.75px solid black;
+        border-radius: 0.5rem;
+        margin-right: 1.25rem;
+      }
+      .profile{
+        height:2.5rem;
+        width:2.5rem;
+        background-repeat: no-repeat;
+        border-radius: 100%;
+        border: 1px solid black;
+        position: absolute;
+        font-size: 0.65rem;
+        line-height: 0.75rem;
+        right: 0.75%;
+        top: 1.25%;
+      }
+      #background-video{
+        max-height: 100%;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */  
+        min-width: 100%;
+        object-fit: cover;
+    }     
+}
